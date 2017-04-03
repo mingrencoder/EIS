@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <!--<Button-->
+        <!--android:id="@+id/id_task_btn_send"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="发送任务"-->
+        <!--android:layout_alignParentTop="true" />-->
+    <!--<Button-->
+        <!--android:layout_below="@+id/id_task_btn_send"-->
+        <!--android:id="@+id/id_task_btn_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="任务列表"/>-->
+
+
+    <!--<ListView-->
+        <!--android:id="@+id/id_task_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/id_task_btn_list"-->
+        <!--android:layout_marginTop="10dp" >-->
+    <!--</ListView>-->
+
+
+    <ListView
+        android:id="@+id/id_task_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp" >
+    </ListView>
+    <Button
+        android:id="@+id/id_task_btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送任务"
+        android:layout_alignParentTop="true" />
+    <Button
+        android:layout_below="@+id/id_task_btn_send"
+        android:id="@+id/id_task_btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="任务列表"/>
+
+</LinearLayout>

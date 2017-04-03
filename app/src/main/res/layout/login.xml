@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_login_bkg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/img_login_white_bkg"
+        android:fitsSystemWindows="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/common_txt_style"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="登录"
+            android:textAllCaps="true"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/id_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/shape_login_edit_bkg"
+            android:drawableLeft="@drawable/ic_login_email"
+            android:drawablePadding="11dp"
+            android:hint="电话/邮箱"
+            android:padding="7.5dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/id_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/id_login_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/shape_login_edit_bkg"
+            android:drawableLeft="@drawable/ic_login_lock"
+            android:drawablePadding="11dp"
+            android:hint="密码"
+            android:inputType="numberPassword"
+            android:padding="7.5dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/id_login_signin"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/id_login_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="22.5dp"
+            android:background="@drawable/selector_login_btn_bkg"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/id_login_signin_offline"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/id_login_signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="22.5dp"
+            android:background="@drawable/selector_login_btn_bkg"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/common_txt_style"
+            android:layout_below="@+id/id_login_signin_offline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22.5dp"
+            android:text=""
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jk.eis">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".push.org.androidpn.demoapp.DemoAppActivity"
+            android:label="@string/app_name">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".push.org.androidpn.client.NotificationDetailsActivity"
+            android:label="Notification Details" />
+        <activity
+            android:name=".push.org.androidpn.client.NotificationSettingsActivity"
+            android:label="Notification Settings" />
+        <activity
+            android:name=".push.org.androidpn.demoapp.NotificationHistoryActivity"
+            android:label="Notification History" />
+
+        <service
+            android:name=".push.org.androidpn.client.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService">
+            <intent-filter>
+                <action android:name="org.androidpn.client.NotificationService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.jk.eis.modules.main.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jk.eis.modules.main.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.jk.eis.modules.main.RegisterActivity"
+            android:label="@string/app_register" />
+        <activity
+            android:name="com.jk.eis.commen.loadimage.LoadImageActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.jk.eis.modules.logtransfer.activity.LoguploadActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.jk.eis.modules.logtransfer.activity.LogcheckActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.jk.eis.modules.logtransfer.activity.LogmanageActivity"
+            android:label="@string/app_name" />
+
+    </application>
+
+</manifest>
